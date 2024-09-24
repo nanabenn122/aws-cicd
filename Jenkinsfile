@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('git checkout'){
             steps{
-                sh 'git branch: 'main', url: 'https://github.com/nanabenn122/aws-cicd.git'
+                git branch: 'main', url: 'https://github.com/nanabenn122/aws-cicd.git'
             }
         }
         stage('test'){
