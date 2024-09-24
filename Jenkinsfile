@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('build'){
+        stage('git checkout'){
             steps{
-                sh 'echo build'
+                sh 'git branch: 'main', url: 'https://github.com/nanabenn122/aws-cicd.git'
             }
         }
         stage('test'){
