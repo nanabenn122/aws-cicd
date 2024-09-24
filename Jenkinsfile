@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage('git checkout'){
+        stage('build'){
             steps{
-                sh 
+                sh 'echo build'
             }
         }
         stage('test'){
