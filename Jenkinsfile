@@ -3,8 +3,8 @@ pipeline {
     environment {
         BRANCH_NAME= 'main'
         GIT_URL= 'https://github.com/nanabenn122/aws-cicd.git'
-        IMAGE_TAG- 'nkbenneh/awscicd'
-        IMAGE_VERSION= ${BUILD_NUMBER}
+        IMAGE_TAG= 'nkbenneh/awscicd'
+        IMAGE_VERSION= "${BUILD_NUMBER}"
     }
     stages {
         stage('git checkout'){
